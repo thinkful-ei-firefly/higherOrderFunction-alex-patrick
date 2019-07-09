@@ -79,10 +79,8 @@ thunderstormWarning('Centinela Ave');
 const turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, -1], [2, -4], [3, 2]]
 //const newMovement = [];
 function noNegative(arr) {
-  for (let i = 0; i <= arr.length; i++) {
-    return arr[[i][0]] > 0 && arr[i][1];
-    //newMovement.push(arr[i]);
-  }
+    return arr[0] >= 0 && arr[1] >= 0;
+    //newMovement.push(arr[i]); 
 }
 console.log(turtleMovement.filter(noNegative));
 
