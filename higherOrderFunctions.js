@@ -77,12 +77,16 @@ thunderstormWarning('Centinela Ave');
 //forEach, filter and map
 
 const turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, -1], [2, -4], [3, 2]]
-const newMovement = [];
+//const newMovement = [];
 function noNegative(arr) {
   for (let i = 0; i <= arr.length; i++) {
-    return arr[[i][i]] > 0;
-    newMovement.push(arr[i]);
+    return arr[[i][0]] > 0 && arr[i][1];
+    //newMovement.push(arr[i]);
   }
 }
 console.log(turtleMovement.filter(noNegative));
 
+//reduce
+function reduce(string) {
+  string.split(' ');
+}
