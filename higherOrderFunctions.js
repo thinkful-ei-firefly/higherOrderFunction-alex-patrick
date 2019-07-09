@@ -73,3 +73,16 @@ const thunderstormWarning = hazardWarningCreator('Strong winds');
 rocksWarning('Main St');
 tornadoWarning('Pacific Ave');
 thunderstormWarning('Centinela Ave');
+
+//forEach, filter and map
+
+const turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, -1], [2, -4], [3, 2]]
+const newMovement = [];
+function noNegative(arr) {
+  for (let i = 0; i <= arr.length; i++) {
+    return arr[[i][i]] > 0;
+    newMovement.push(arr[i]);
+  }
+}
+console.log(turtleMovement.filter(noNegative));
+
