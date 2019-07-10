@@ -77,6 +77,7 @@ thunderstormWarning('Centinela Ave');
 //forEach, filter and map
 
 const turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, -1], [2, -4], [3, 2]]
+
 //const newMovement = [];
 function noNegative(arr) {
     return arr[0] >= 0 && arr[1] >= 0;
@@ -84,7 +85,20 @@ function noNegative(arr) {
 }
 console.log(turtleMovement.filter(noNegative));
 
+
 //reduce
-function reduce(string) {
-  string.split(' ');
+
+let string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+
+const arrWords = string.split(' ');
+
+const parameters = function(output, word) {
+  if (word.length === 3) {
+    return output + ' ';
+  }
+  else {
+    return output + word[word.length-1].toUpperCase();
+  }
 }
+
+console.log(arrWords.reduce(parameters));
