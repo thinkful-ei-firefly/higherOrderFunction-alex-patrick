@@ -77,14 +77,27 @@ thunderstormWarning('Centinela Ave');
 //forEach, filter and map
 
 const turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, -1], [2, -4], [3, 2]]
-//const newMovement = [];
 function noNegative(arr) {
-    return arr[0] >= 0 && arr[1] >= 0;
-    //newMovement.push(arr[i]); 
+  //for (let i....)  
+  return arr[0] >= 0 && arr[1] >= 0;
 }
 console.log(turtleMovement.filter(noNegative));
 
-//reduce
-function reduce(string) {
-  string.split(' ');
+function total(arr) {
+  return arr.map(arr2 => arr2[0] + arr2[1]);
+  //turtleMovement.map(function (arr2) {
+  //  return arr2[0] + arr2[1]
+  //});
 }
+console.log(total(turtleMovement));
+
+function totalStep(arr) {
+  turtleMovement.forEach(function(arr3) {
+    return console.log(arr3[0] + arr3[1]);
+  });
+}
+totalStep(turtleMovement);
+
+//reduce
+const scrambledWords = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+const splitWords = scrambledWords.split(' ');
